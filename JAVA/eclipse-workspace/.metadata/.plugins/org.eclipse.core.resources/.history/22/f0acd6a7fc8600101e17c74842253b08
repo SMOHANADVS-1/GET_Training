@@ -1,0 +1,17 @@
+package controlflow;
+
+/**
+ * Author  :Sola.Sri
+ * Date    :Sep 1, 2025
+ * Time    :11:52:38 AM  
+ * project :CoreJava
+*/
+
+public class TernaryDemo2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

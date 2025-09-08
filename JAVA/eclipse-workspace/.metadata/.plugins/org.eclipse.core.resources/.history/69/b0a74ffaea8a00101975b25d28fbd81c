@@ -1,0 +1,12 @@
+package onlineshopping;
+
+/**
+ * Author  :Sola.Sri
+ * Date    :Sep 6, 2025
+ * Time    :11:59:53 AM  
+ * project :CoreJava
+*/
+
+public abstract class product {
+
+}

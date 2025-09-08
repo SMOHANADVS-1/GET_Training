@@ -1,0 +1,17 @@
+package oopsdemo2;
+
+/**
+ * Author  :Sola.Sri
+ * Date    :Sep 3, 2025
+ * Time    :4:30:31 PM  
+ * project :CoreJava
+*/
+
+public class SingleInheritenceDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

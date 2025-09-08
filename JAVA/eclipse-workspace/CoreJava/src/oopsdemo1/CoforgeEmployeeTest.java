@@ -1,0 +1,38 @@
+package oopsdemo1;
+
+/**
+ * Author  :Sola.Sri
+ * Date    :Sep 2, 2025
+ * Time    :4:42:23 PM  
+ * project :CoreJava
+*/
+ // main class to test Employee class methods
+public class CoforgeEmployeeTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//create objects e1,e2,e3 of Employee class
+		Employee developer = new Employee(); // invoke default constructor
+		Employee tester = new Employee(); 
+		Employee sales = new Employee(); 
+		
+		System.out.println("**********Coforge Technologies*************");
+		
+		//invoke methods(Method Call
+		developer.inputEmployeeDetails();//p1.eat();
+		developer.calculateNetSalary();
+		developer.displayEmployeeDetails();
+		
+		tester.inputEmployeeDetails();//p1.eat();
+		tester.calculateNetSalary();
+		tester.displayEmployeeDetails();
+
+		sales.inputEmployeeDetails();//p1.eat();
+		sales.calculateNetSalary();
+		sales.displayEmployeeDetails();
+
+
+	}
+
+}

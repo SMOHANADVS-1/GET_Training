@@ -1,0 +1,17 @@
+package oopsdemo2;
+
+/**
+ * Author  :Sola.Sri
+ * Date    :Sep 4, 2025
+ * Time    :12:55:23 PM  
+ * project :CoreJava
+*/
+
+public class AirlineCompositionDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

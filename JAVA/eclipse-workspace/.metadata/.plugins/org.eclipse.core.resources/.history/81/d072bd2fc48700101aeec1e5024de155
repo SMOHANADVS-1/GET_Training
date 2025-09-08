@@ -1,0 +1,17 @@
+package arraydemo;
+
+/**
+ * Author  :Sola.Sri
+ * Date    :Sep 2, 2025
+ * Time    :11:42:42 AM  
+ * project :CoreJava
+*/
+
+public class EmployeeDetailsArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

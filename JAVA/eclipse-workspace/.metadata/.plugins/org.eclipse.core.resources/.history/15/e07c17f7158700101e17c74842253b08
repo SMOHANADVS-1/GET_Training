@@ -1,0 +1,17 @@
+package controlflow;
+
+/**
+ * Author  :Sola.Sri
+ * Date    :Sep 1, 2025
+ * Time    :2:54:24 PM  
+ * project :CoreJava
+*/
+
+public class ForDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

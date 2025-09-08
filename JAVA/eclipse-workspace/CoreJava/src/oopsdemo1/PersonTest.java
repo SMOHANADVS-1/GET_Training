@@ -1,0 +1,42 @@
+package oopsdemo1;
+
+import java.util.Scanner;
+
+/**
+ * Author  :Sola.Sri
+ * Date    :Sep 3, 2025
+ * Time    :2:22:20 PM  
+ * project :CoreJava
+*/
+
+public class PersonTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Person obj1Person =new Person();//invoke implicit constructor
+		
+		obj1Person.input();
+		obj1Person.print();
+		System.out.println("----------------------------------------");
+		Person objPerson2 = new Person("Mike",45);//invokes constructor with 2 args
+		
+		objPerson2.print();
+		System.out.println("----------------------------------------");
+		Person objPerson3 = new Person("mohana","guntur",22);//invokes constructor with 3 args
+		objPerson3.print();
+		
+		System.out.println("----------------------------------------");
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter your Name,Constituency & Age : ");
+		String name = s.next();
+		String c = s.next();
+		int a = s.nextInt();
+		
+		Person objPerson4 = new Person(name,c,a);
+		objPerson4.print();
+		
+		
+
+	}
+
+}

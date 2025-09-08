@@ -1,0 +1,18 @@
+package basics;
+
+/**
+ * Author  :Sola.Sri
+ * Date    :Sep 4, 2025
+ * Time    :2:04:02 PM  
+ * project :CoreJava
+*/
+
+public class Mohana {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Mohana");
+
+	}
+
+}

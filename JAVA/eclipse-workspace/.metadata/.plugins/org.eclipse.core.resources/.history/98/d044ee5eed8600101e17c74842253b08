@@ -1,0 +1,17 @@
+package controlflow;
+
+/**
+ * Author  :Sola.Sri
+ * Date    :Sep 1, 2025
+ * Time    :10:04:46 AM  
+ * project :CoreJava
+*/
+
+public class OddEven {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

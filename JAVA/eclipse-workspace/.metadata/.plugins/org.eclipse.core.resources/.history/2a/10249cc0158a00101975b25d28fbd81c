@@ -1,0 +1,24 @@
+package oopsdemo3;
+
+/**
+ * Author  :Sola.Sri
+ * Date    :Sep 5, 2025
+ * Time    :10:31:11 AM  
+ * project :CoreJava
+ */
+class Test
+{
+	int a; //default variable -- accessible in all classes of the package
+	private int b; //private variable - accessible in this class
+	protected int c; //protected variable - accessible in this class & subclass
+	public int d; //Accessible from anywhere
+
+}
+public class AccessSpecifiersDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,56 @@
+package oopsdemo4;
+
+/**
+ * Author  :Sola.Sri
+ * Date    :Sep 5, 2025
+ * Time    :4:10:26 PM  
+ * project :CoreJava
+*/
+
+public abstract class CargoShipment {
+	
+	private String shipmentId;
+    private String sender;
+    private String receiver;
+    private double weight;   // in kg
+    private String destination;
+    private String cargoType;
+    //constructor 1:
+	public CargoShippment(String shipmentId, String destination) {
+		this.shipmentId = shipmentId;
+		this.weight = 0.0;
+		this.destination = destination;
+		this.cargoType = "General";
+	}
+	 //constructor 2:shipment with all details
+	public CargoShippment(String shipmentId, String sender, String receiver, double weight) {
+		this.shipmentId = shipmentId;
+		this.sender = sender;
+		this.receiver = receiver;
+		this.weight = weight;
+		
+		this.cargoType = "General";
+	}
+	 //constructor 3:
+	public CargoShippment(String shipmentId, String sender, String receiver, double weight, String destination,
+			String cargoType) {
+		this.shipmentId = shipmentId;
+		this.sender = sender;
+		this.receiver = receiver;
+		this.weight = weight;
+		this.destination = destination;
+		this.cargoType = cargoType;
+	}
+    
+	// Method to display shipment details
+    public void showShipmentDetails() {
+        System.out.println("Shipment ID: " + shipmentId);
+        System.out.println("Sender: " + sender);
+        System.out.println("Receiver: " + receiver);
+        System.out.println("Weight: " + weight + " kg");
+        System.out.println("Destination: " + destination);
+        System.out.println("Cargo Type: " + cargoType);
+        System.out.println("-----------------------------------");
+    }
+
+}

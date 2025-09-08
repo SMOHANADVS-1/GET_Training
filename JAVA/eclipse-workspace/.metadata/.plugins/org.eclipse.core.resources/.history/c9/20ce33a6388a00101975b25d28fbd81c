@@ -1,0 +1,17 @@
+package oopsdemo4;
+
+/**
+ * Author  :Sola.Sri
+ * Date    :Sep 5, 2025
+ * Time    :2:43:42 PM  
+ * project :CoreJava
+*/
+
+public class EmployeePay {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

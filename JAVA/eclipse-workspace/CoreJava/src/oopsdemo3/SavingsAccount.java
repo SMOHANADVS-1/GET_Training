@@ -1,0 +1,54 @@
+package oopsdemo3;
+
+/**
+ * Author  :Sola.Sri
+ * Date    :Sep 4, 2025
+ * Time    :4:14:48 PM  
+ * project :CoreJava
+*/
+
+public class SavingsAccount extends Account{
+	
+	private double intrestRate;
+	
+	public SavingsAccount(String name, double balance,double intrestRate) {
+		super(name, balance);
+		this.intrestRate = intrestRate;
+		// TODO Auto-generated constructor stub
+	}
+
+}
+class CheckingAccount extends Account
+{
+	private double overDraft; //pre-sanctioned loan
+	
+	public CheckingAccount(String name, double balance,double overDraft) {
+		super(name, balance);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void withdraw(double amt) {
+		// TODO Auto-generated method stub
+		 System.out.println("Overdraft Amount: " + overDraft);
+	        if (amt <= balance) {
+	            balance -= amt;
+	            System.out.println("Withdrawing: " + amt);
+	        } else if ((amt > balance) && (amt > (balance + overDraft))) {
+	            System.out.println("Sorry! You cannot withdraw");
+	        } else {
+	            double result = amt - balance;
+	            overDraft -= result;
+	            balance = 0;
+
+	            System.out.println("Withdrawing: " + amt);
+	            System.out.println("Current Overdraft Amount: "
+	                    + overDraft);
+	        }
+	}
+	
+
+	
+	
+	
+}

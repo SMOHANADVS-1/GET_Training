@@ -1,0 +1,17 @@
+package exceptionsdemo;
+
+/**
+ * Author  :Sola.Sri
+ * Date    :Sep 6, 2025
+ * Time    :3:07:53 PM  
+ * project :CoreJava
+*/
+
+public class ShoppingInstallments {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

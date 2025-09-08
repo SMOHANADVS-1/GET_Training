@@ -1,0 +1,17 @@
+package oopsdemo1;
+
+/**
+ * Author  :Sola.Sri
+ * Date    :Sep 3, 2025
+ * Time    :2:45:44 PM  
+ * project :CoreJava
+*/
+
+public class AirCargoTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

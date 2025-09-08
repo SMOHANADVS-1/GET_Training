@@ -1,0 +1,17 @@
+package arraysdemo;
+
+/**
+ * Author  :Sola.Sri
+ * Date    :Sep 2, 2025
+ * Time    :9:46:06 AM  
+ * project :CoreJava
+*/
+
+public class enhancedloop {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

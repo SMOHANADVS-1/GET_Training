@@ -1,0 +1,52 @@
+package exceptionsdemo;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+/**
+ * Author  :Sola.Sri
+ * Date    :Sep 6, 2025
+ * Time    :2:55:30 PM  
+ * project :CoreJava
+ * / Java Program to demonstrate multiple catch blocks./
+*/
+
+public class MultipleDemo {
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader (new InputStreamReader (System.in));
+		int a, b, c;
+
+      try
+		{			
+			System.out.println ("Enter Any 2 Numbers");
+			a = Integer.parseInt (br.readLine ());
+			b = Integer.parseInt (br.readLine ());
+			System.out.println("Enter your Name : ");
+			String name=br.readLine();
+			c = a / b;
+			
+			System.out.println ("C VALUE = " + c);
+			System.out.println("Thank You "+name);
+		}
+      
+      catch(NumberFormatException nfe)
+      {
+    	  System.err.println("Please pass only Integer Values"+nfe);
+      }
+      catch(ArithmeticException ae)
+      {
+    	  System.err.println("Please dont pass second value as 0"+ae);
+      }
+      
+      finally
+      {
+    	  br.close();
+    	  System.out.println("Inside the finally block");
+      }
+      System.out.println("End of the main method");
+
+	}
+
+}

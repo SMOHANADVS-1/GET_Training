@@ -1,0 +1,17 @@
+package oopsdemo3;
+
+/**
+ * Author  :Sola.Sri
+ * Date    :Sep 5, 2025
+ * Time    :9:47:49 AM  
+ * project :CoreJava
+*/
+
+public class UpCastingDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

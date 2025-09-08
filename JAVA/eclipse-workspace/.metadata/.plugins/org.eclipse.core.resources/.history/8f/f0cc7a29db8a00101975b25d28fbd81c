@@ -1,0 +1,12 @@
+package oopsdemo4;
+
+/**
+ * Author  :Sola.Sri
+ * Date    :Sep 6, 2025
+ * Time    :10:05:59 AM  
+ * project :CoreJava
+*/
+
+public interface Flight {
+
+}
