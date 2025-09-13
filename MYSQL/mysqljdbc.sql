@@ -83,3 +83,4 @@ DELIMITER ;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 SELECT * FROM candidates;
 DESC candidates;
+SELECT * FROM skills;
