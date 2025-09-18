@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executing a function in hover event in jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+     <style>
+    p{
+        padding: 20px;
+        font: 20px sans-serif;
+        background: #f2f2f2;
+    }
+    p.highlight{
+        background: yellow;
+    }
+</style>
+</head>
+<body>
+   
+
+<script>
+$(document).ready(function(){
+    $("p").hover(function(){ //hover event
+        $(this).addClass("highlight"); // addClass- DOM manipulation method
+    }, function(){
+        $(this).removeClass("highlight");
+    });
+});
+</script>
+
+
+
+ <p>Place mouse pointer on me.</p>
+    <p>Place mouse pointer on me.</p>
+    <p>Place mouse pointer on me.</p>
+</body>
+</html>

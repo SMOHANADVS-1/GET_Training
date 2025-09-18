@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in jQuery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $("button").click(function () {
+
+                // Move Right (1st corner)
+                $("div").animate({ left: '600px'}, 2000, function(){
+                    $(this).css({"background-color":"red","height":"120px","width":"120px"});
+                })
+                    // Move Down (2nd corner)
+                .animate({ left: '0px' }, 2000, function(){
+                    $(this).css({"background-color":"blue","height":"140px","width":"80px"});
+                })
+                    // Move Left (3rd corner)
+                .animate({ left: '0px'}, 2000,function(){
+                    $(this).css({"background-color": "green", "height": '100px', "width": "150px","border":"5px solid red","borderRadius":"15px"});
+                })
+                    // Move Up (4th corner - back to start)
+                .animate({ top: '75px'}, 2000, function () {
+                        $(this).css({"background-color": "yellow", "height": '100px', "width": "100px"});
+                });
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <button>Start Animation</button>
+    <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember
+        to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+    <div style="background:#98bf21;height:100px;width:100px;position:absolute;">
+    </div>
+
+</body>
+
+</html>
