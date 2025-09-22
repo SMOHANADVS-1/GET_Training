@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="oopsdemo3.Account"/>
     <fullyQualifiedTypeName name="oopsdemo3.Trading"/>
     <fullyQualifiedTypeName name="oopsdemo3.Product"/>
@@ -13,7 +12,6 @@
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
     <fullyQualifiedTypeName name="exceptionsdemo.ThrowsExample"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.util.function.Function"/>
     <fullyQualifiedTypeName name="java.util.function.BiFunction"/>
     <fullyQualifiedTypeName name="java8features.Vehicle"/>
@@ -21,4 +19,7 @@
     <fullyQualifiedTypeName name="java.util.stream.Stream"/>
     <fullyQualifiedTypeName name="sun.jvm.hotspot.runtime.StaticBaseConstructor"/>
     <fullyQualifiedTypeName name="sun.jvm.hotspot.oops.java_lang_Class"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
