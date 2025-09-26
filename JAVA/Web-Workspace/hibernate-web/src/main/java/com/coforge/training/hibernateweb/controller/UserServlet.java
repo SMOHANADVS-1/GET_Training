@@ -1,28 +1,30 @@
-package com.coforge.training.empsoft.servlet;
+package com.coforge.training.hibernateweb.controller;
 
-import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
+import java.util.Arrays;
 
-import com.coforge.training.empsoft.bean.Employee;
-import com.coforge.training.empsoft.dao.EmployeeDAO;
+import com.coforge.training.hibernateweb.dao.UserDAO;
+import com.coforge.training.hibernateweb.model.User;
 
 /**
- * Servlet implementation class ViewServlet
+ * Servlet implementation class UserServlet
  */
-@WebServlet("/ViewServlet")
-public class ViewServlet extends HttpServlet {
+@WebServlet("/UserServlet")
+public class UserServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	
+	private UserDAO dao = new UserDAO();
+	 
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ViewServlet() {
+    public UserServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -31,12 +33,16 @@ public class ViewServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		List<Employee> ulist=EmployeeDAO.getAllRecords(); // call methods in DAO layer
-		request.setAttribute("elist", ulist);
-		
-		RequestDispatcher rd=request.getRequestDispatcher("ViewEmployees.jsp");
-		rd.forward(request, response);
-		
+
+		 String name = request.getParameter("name");
+			        String[] skills = request.getParameterValues("skills");
+
+			        User user = new User();
+			        user.setName(name);
+			        if (skills != null) user.setSkills(Arrays.asList(skills));
+
+			        dao.save(user);
+			        response.sendRedirect("listUsers.jsp");
 	}
 
 	/**

@@ -17,7 +17,6 @@
   <tr>
     <th>Id</th>
     <th>Name</th>
-    <th>Password</th>
     <th>Email</th>
     <th>Sex</th>
     <th>Country</th>
@@ -25,20 +24,22 @@
     <th>Delete</th>
   </tr>
 
-  <c:forEach items="${elist}" var="u">
+  <c:forEach items="${elist}" var="u">    <!--${elist} ---it is a expression Language  -->
     <tr>
       <td>${u.getId()}</td>
       <td>${u.getName()}</td>
-      <td>${u.getPassword()}</td>
       <td>${u.getEmail()}</td>
       <td>${u.getSex()}</td>
       <td>${u.getCountry()}</td>
-      <td><a href="editForm.jsp?id=${u.getId()}">Edit</a></td>
-      <td><a href="deleteUser.jsp?id=${u.getId()}">Delete</a></td>
+      <td><a class = "update-btn" href="UpdateEmployee.jsp?id=${u.getId()}">Update</a></td>
+      <td><a class = "delete-btn" href="DeleteEmployee.jsp?id=${u.getId()}"onclick="return confirm('Are you sure you want to delete this employee?')">Delete</a></td>
+     <!--  <td><a href="editForm.jsp?id=${u.getId()}">Edit</a></td>
+      <td><a href="deleteUser.jsp?id=${u.getId()}">Delete</a></td> -->
     </tr>
   </c:forEach>
 </table>
 
-<a href="addUser.jsp" class="add-user-link">Add New User</a>
+<a href="AddEmployee.jsp" class="add-user-link">Add New User</a>
+<a href="index.html" class="add-user-link">Home</a>
 </body>
 </html>

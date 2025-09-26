@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f4f6f9;
@@ -8,10 +9,14 @@ body {
 
 h1 {
   text-align: center;
-  color: #2c3e50;
+  color: #007bff;
   margin-bottom: 25px;
 }
-
+h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
 table {
   width: 90%;
   margin: 0 auto;
@@ -54,22 +59,22 @@ a {
   transition: all 0.3s ease;
 }
 
-a[href*="edit"] {
+.update-btn {
   background: #28a745;
   color: #fff;
 }
 
-a[href*="edit"]:hover {
+.update-btn:hover {
   background: #1e7e34;
   transform: scale(1.05);
 }
 
-a[href*="delete"] {
+.delete-btn {
   background: #dc3545;
   color: #fff;
 }
 
-a[href*="delete"]:hover {
+.delete-btn:hover {
   background: #b02a37;
   transform: scale(1.05);
 }

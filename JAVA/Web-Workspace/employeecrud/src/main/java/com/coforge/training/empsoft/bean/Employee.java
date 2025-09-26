@@ -6,6 +6,7 @@ package com.coforge.training.empsoft.bean;
  *Project:employeecrud
 */
 
+//This Bean class represents an Employee entity.
 public class Employee {
 
 	private int id;  
