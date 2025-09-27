@@ -36,7 +36,7 @@
                 <hr>
                 <a href="hql.jsp">HQL</a>
                 <a href="EmployeeCriteria.jsp">Criteria API</a>
-                <a href="Manipulation.jsp">DML</a>
+                <a href="manipulation.jsp">DML</a>
             </section>
 
             <section>
