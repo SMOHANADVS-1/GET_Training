@@ -18,7 +18,7 @@ import com.coforge.training.springweb.model.User;
 @Controller
 public class RegistrationController {
 	//Load Registration Form
-	@GetMapping("/register")
+	@GetMapping("/register") //mapping names of method showRegistrationForm
 	public String showRegistrationForm(Model theModel)
 	{
 		theModel.addAttribute("user",new User());
@@ -31,7 +31,7 @@ public class RegistrationController {
 	public String submitForm(@ModelAttribute("user") User user, Model model)
 	{
 		model.addAttribute("user", user); //Pass user to success page
-		return "success"; // success.jsp
+		return "success"; // success.jsp //returns user object+success.jsp
 	}
 	//View Registration Form details
 

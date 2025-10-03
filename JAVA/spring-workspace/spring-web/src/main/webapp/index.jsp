@@ -65,8 +65,15 @@ h2 {
 		<!-- Invokes Controller mapped with name 'noida' -->
 		<a class="button-link" href="noida" role="button">Noida Page</a>
 		
-		<!-- Invokes Controller mapped with name 'noida' -->
+		<!-- Invokes Controller mapped with name 'register' -->
 		<a class="button-link" href="register" role="button">User Registration</a>
+		
+		
+		<a class="button-link" href="user" role="button">User Info</a>
+		<br><br>
+		<a class="button-link" href="reservation" role="button">Train Reservation</a>
+		
+		<a class="button-link" href="login" role="button">Login</a>
 	</div>
 </body>
 </html>

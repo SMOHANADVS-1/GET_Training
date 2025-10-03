@@ -29,7 +29,7 @@ public class HelloWorldController {
 	@GetMapping("/noida")//Mapping URL of the request to the method
 
 	public String sayHello1() {
-		return "noida"; //returns hello.jsp
+		return "noida"; //returns noida.jsp
 	}
 
 }

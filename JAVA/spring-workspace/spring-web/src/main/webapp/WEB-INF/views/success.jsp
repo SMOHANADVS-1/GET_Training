@@ -14,7 +14,7 @@
 	<div class="card">
 	<h2>Registration Successful!</h2>
 	<p>
-		<span>Name:</span> ${user.name}
+		<span>Name:</span> ${user.name}<!-- Expression Language -->
 	</p>
 	<p>
 		<span>Email:</span> ${user.email}
