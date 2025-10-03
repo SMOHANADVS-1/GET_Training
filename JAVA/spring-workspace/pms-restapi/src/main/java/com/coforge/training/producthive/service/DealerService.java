@@ -1,11 +1,13 @@
 package com.coforge.training.producthive.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.coforge.training.producthive.model.Dealer;
+import com.coforge.training.producthive.model.DealerAndAddressProjection;
 import com.coforge.training.producthive.repository.DealerRepository;
 
 /**
@@ -39,5 +41,8 @@ public class DealerService {
 		return drepo.findByEmail(email); //invokes custom methods of Jpa Repository
 	}
 	
+	public List<DealerAndAddressProjection> getDealerInfo() {
+		return drepo.findSelectedFieldsFromDealerAndAddress(); //Invokes Custom Query method
+	}
 
 }

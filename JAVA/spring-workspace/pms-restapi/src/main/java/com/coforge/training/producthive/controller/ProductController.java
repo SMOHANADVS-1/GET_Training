@@ -10,6 +10,7 @@ import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.coforge.training.producthive.exception.ResourceNotFoundException;
@@ -185,6 +186,40 @@ public class ProductController {
 			
 			return ResponseEntity.ok(response);
 		}
+		
+		
+		/*
+		 * In Spring Boot, RequestParam is a standard annotation used to inject request parameters 
+		 * from a web request into a controller method. 
+		 * It is often used to extract data from HTTP requests, such as form parameters or query parameters. 
+		 * When a controller method is annotated with @RequestParam, the method parameter is 
+		 * bound to the value of the corresponding request parameter. 
+		 * For example, @RequestParam("name") String name would bind the name method parameter to 
+		 * the value of the "name" request parameter.
+		 * 	
+		 * ResponseEntity<?> indicates that the body of the response can be any type, 
+		 * making it a generic reusable class.
+		 */
+		// GET Request - http://localhost:8088/product-hive/api/search?name=Lap top
+		@GetMapping("/search")
+	    public ResponseEntity<?> searchProductsByName(@RequestParam("name") String name) {
+	        try {
+	            List<Product> products = pservice.searchProductsByName(name);
+	            
+	            if (products.isEmpty()) {
+	                return new ResponseEntity<>("No products found with the given name.", HttpStatus.NOT_FOUND);
+	            }
+	            
+	            return new ResponseEntity<>(products, HttpStatus.OK);
+	        } catch (Exception ex) {
+	        	//database error
+	            return new ResponseEntity<>("An error occurred while searching for products.", HttpStatus.INTERNAL_SERVER_ERROR);
+	        }
+	    }
+		
+		// Client (POSTMAN/Browser) --> request --->FC --> Controller ---> Service --> Repository --> JPA --> DB(MySQL)
+		
+		// DB - Response --> JPA --> Repository --> Service ---> Controller ---> FC ---> PostMan/Browser
 
 
 

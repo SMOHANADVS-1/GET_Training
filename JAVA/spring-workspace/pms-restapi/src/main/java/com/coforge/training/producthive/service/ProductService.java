@@ -43,6 +43,10 @@ public class ProductService {
 	   public void deleteProduct(long pid) {
 		   prepo.deleteById(pid); //Invokes pre-defined method deleteById() of JPA repository
 	   }
+	   
+	   public List<Product> searchProductsByName(String name){
+		   return prepo.findProductsByNameContainingIgnoreCase(name); //Invokes method with custom query
+	   }
 	
 
 }

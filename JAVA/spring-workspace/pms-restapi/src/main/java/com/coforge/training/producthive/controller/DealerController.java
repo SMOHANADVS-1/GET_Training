@@ -1,8 +1,11 @@
 package com.coforge.training.producthive.controller;
 
+import java.util.List;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.coforge.training.producthive.exception.ResourceNotFoundException;
 import com.coforge.training.producthive.model.Address;
 import com.coforge.training.producthive.model.Dealer;
+import com.coforge.training.producthive.model.DealerAndAddressProjection;
 import com.coforge.training.producthive.service.DealerService;
 
 /**
@@ -77,6 +81,26 @@ public class DealerController {
 			}
 			return ResponseEntity.ok(isLogin);
 		}
+		
+
+		  // client --> Controller --> Service -- > repo --> JPA repo --> DB
+			
+			 //Open PostMan, make a GET Request - http://localhost:8088/product-hive/api/dealers
+			
+			//Logger logger=LoggerFactory.getLogger(DealerController.class);
+			
+			@GetMapping("/dealers")
+			public ResponseEntity<List<DealerAndAddressProjection>> getDealerInfo(){
+				try {
+					List<DealerAndAddressProjection> selectedFields=dservice.getDealerInfo();
+					//logger.info("Dealer Information fetched Successfully");
+					return ResponseEntity.ok(selectedFields);
+				}catch(Exception e) {
+					e.printStackTrace();
+					//logger.error("Dealer Information fetched UnSuccessfully");
+					return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+				}
+			}
 
 		
 		
