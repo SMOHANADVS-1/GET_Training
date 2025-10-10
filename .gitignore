@@ -1,0 +1,13 @@
+.env
+/Angular/angular-app/node_modules/
+/Angular/angular-app-demo/node_modules/
+/Angular/coforge-ltd/node_modules/
+/Angular/my-dream-app/node_modules/
+/Angular/pms-consumer/node_modules/
+/node_modules/
+/ReactJs/coforgeltd/node_modules/
+/ReactJs/helloworld/node_modules/
+/ReactJs/my-app/node_modules/
+
+/ReactJs/secondapp/coforge-ltd/node_modules/
+/ReactJs/secondapp/coforgetwo/node_modules/

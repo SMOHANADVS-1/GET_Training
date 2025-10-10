@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -23,9 +24,15 @@ import com.coforge.training.producthive.service.DealerService;
  * Time   : 3:24:41 PM
  *Project : pms-restapi
 */
-
+/*
+The @CrossOrigin annotation in Spring Boot is used to enable Cross-Origin Resource Sharing 
+* (CORS) for specific controller methods or entire controller classes. T
+* his annotation is crucial for allowing web browsers to make requests to your 
+* Spring Boot backend from a different origin (domain, protocol, or port) 
+* than the one serving the frontend.
+* */
 //Controller for Registration & Login process of the Dealer
-
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping(value = "/api")
 public class DealerController {
